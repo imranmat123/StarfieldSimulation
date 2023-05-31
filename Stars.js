@@ -10,7 +10,7 @@ class Stars {
     this.canvasHeight = canvasHeight;
     this.x = (Math.random() - 0.5) * this.canvasWidth;
     this.y = (Math.random() - 0.5) * this.canvasHeight;
-    this.z = this.canvasWidth / 2;
+    this.z = -this.canvasWidth;
     this.t = this.canvasWidth / 2;
     this.l = this.canvasHeight / 2;
     this.size = size;
@@ -28,7 +28,13 @@ class Stars {
   }
 
   update() {
-    this.z -= 1;
+    this.z += 100;
+
+    if (this.z == 1999.8362762819095){
+        this.z = canvasWidth;
+    }
+
+    console.log(this.z)
 
   }
 }

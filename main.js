@@ -68,7 +68,7 @@ function setup() {
 
 function animate(lookatstar) {
 
-    ctx.clearRect(-760, -420, canvas.width/2, canvas.height/2);
+    ctx.clearRect(-1000, -500, canvas.width*2, canvas.height*2);
 
     let update = [];
 
